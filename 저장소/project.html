@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Define color variables */
+        :root {
+            --color-primary: #B9D7EA; /* Light blue for primary elements */
+            --color-secondary: #4D6575; /* Dark color for text and footer */
+        }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; /* White background */
+            color: var(--color-secondary);
+        }
+    
+        .jumbotron-custom {
+            background-color: white; /* White background */
+            color: var(--color-secondary);
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 4px solid var(--color-primary); /* Light blue border */
+        }
+    
+        .navbar-custom {
+            background-color: white; /* White background */
+            box-shadow: 0 2px 4px rgba(0,0,0,.1); /* subtle shadow for depth */
+        }
+    
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: var(--color-secondary);
+        }
+    
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link:focus {
+            color: var(--color-primary);
+        }
+    
+        .section-heading {
+            color: var(--color-primary);
+            margin-top: 1rem;
+        }
+    
+        .footer-custom {
+            background-color: var(--color-secondary);
+            color: white; /* White text */
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .content {
+            padding: 2rem;
+        }
+    
+        hr {
+            border-top: 2px solid var(--color-primary);
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="jumbotron jumbotron-fluid jumbotron-custom text-center">
+        <div class="container">
+            <h1 class="display-4">Your Name - Web Developer</h1>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container content">
+        <section id="skills">
+            <h2 class="section-heading">Skills</h2>
+            <p>Details about your skills. You can add more content here, like a list of skills or images.</p>
+        </section>
+        <hr>
+        <section id="projects">
+            <h2 class="section-heading">Recent Projects</h2>
+            <p>Details about recent projects. Here, you could add a gallery or a slider with project images.</p>
+        </section>
+        <hr>
+        <section id="about">
+            <h2 class="section-heading">About Me</h2>
+            <p>A brief about you. Consider adding a professional photo or a more detailed bio.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-custom text-center">
+        <div class="container">
+            <p>Copyright © 2024 Your Name</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

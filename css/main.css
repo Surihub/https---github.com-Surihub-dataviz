@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.main-container {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  position: relative;
+}
+.top-banner {
+  width: 100%;
+  height: auto;
+  background-image: url('../images/digitallab_re.jpeg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 200px 0;
+}
+.banner-background {
+  /* This style will be merged into .top-banner */
+}
+.main-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+.subtitle {
+  font-size: 32px;
+  font-weight: regular;
+  color: #f5f5f5;
+  margin: 20px 0;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin: 0 5px;
+  opacity: 0.3;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+
+.indicator.active {
+  opacity: 1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* A more pronounced shadow for active indicator */
+}
+
+
+
+.navigation-bar {
+  background-color: #333; /* Dark background for the navbar */
+  color: #fff;
+  display: flex;
+  justify-content: center; /* Centers the navigation items */
+  padding: 10px 0; /* Adds some vertical padding */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Makes sure the navbar stays on top */
+}
+
+.nav-item {
+  text-decoration: none; /* Removes underline from links */
+  color: #fff; /* White text color */
+  margin: 0 20px; /* Space between navigation items */
+  display: flex; /* Aligns the icon and text */
+  align-items: center; /* Centers items vertically */
+}
+
+.nav-icon {
+  width: 24px; /* Size of the icon */
+  height: 24px; /* Size of the icon */
+  background-size: cover;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.nav-icon.automation {
+  background-image: url('path-to-your-automation-icon.png');
+}
+
+.nav-icon.data-analysis {
+  background-image: url('path-to-your-data-analysis-app-icon.png');
+}
+
+.nav-icon.gpt-feedback {
+  background-image: url('path-to-your-gpt-feedback-icon.png');
+}
+
+/* Hover effect for navigation items */
+.nav-item:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+}
+
+
+
+
+.content-sections {
+  text-align: center;
+  padding: 50px 0;
+}
+.section {
+  display: inline-block;
+  width: 250px; /* Adjust width according to actual design */
+  margin: 0 10px;
+  vertical-align: top;
+}
+.image {
+  /* If images are used in sections, styles go here */
+}
+.text-block {
+  background: #F7F7F7;
+  padding: 20px;
+  margin-top: 20px;
+}
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+.description {
+  font-size: 24px;
+  font-weight: regular;
+  color: #000000;
+  margin: 10px 0;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer-content {
+  display: inline-block;
+  margin: 0 auto;
+}
+.footer-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+.link-divider {
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background: #000000;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates four columns with equal width */
+  grid-gap: 20px; /* Adjust the gap as needed */
+  padding: 20px; /* Adds some padding around the grid */
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Centers the grid in the page */
+}
+
+.grid-item {
+  background: #F7F7F7;
+  padding: 20px;
+  text-align: center; /* Centers the text within each grid item */
+}
+
+.grid-item h2 {
+  margin: 0 0 10px; /* Adds spacing below the title */
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+.grid-item p {
+  margin: 0;
+  font-size: 16px; /* Adjust the font size as needed */
+}
