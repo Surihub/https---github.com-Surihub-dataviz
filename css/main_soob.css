@@ -63,7 +63,7 @@
 .main-container .title{
     position: absolute;
     left:50%;
-    top:40%;
+    top:45%;
     transform:translate(-50%, -50%);
     color:white;
     text-align: center ;
@@ -142,7 +142,7 @@
 
 .footer .social-links a {
     margin: 0 10px; /* Horizontal spacing */
-    color: #007bff; /* Bootstrap primary color for links */
+    color: #ffb339; /* Bootstrap primary color for links */
     text-decoration: none; /* No underline */
     font-size: 16px; /* Slightly larger font size */
 }
