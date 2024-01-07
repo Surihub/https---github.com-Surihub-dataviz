@@ -77,6 +77,24 @@
     font-size: 2.5vw;
 }
 
+/* 기본적으로 축약 텍스트를 숨깁니다 */
+.short-text {
+    display: none;
+}
+
+/* 화면 너비에 따라 달라지도록 */
+@media (max-width: 600px) {
+    .navbar-container .header .nav .full-text {
+        display: none;
+    }
+
+    .navbar-container .header .nav .short-text {
+        display: inline;
+        font-size: 16px; /* 원하는 폰트 크기로 조절하세요 */
+        visibility: visible;
+    }
+}
+
 
 .content {
     position: absolute; /* Position .content absolutely */
@@ -88,6 +106,7 @@
     justify-content: center; /* Centers the items horizontally */
     padding: 20px;
     gap: 20px; /* Space between the items */
+    flex-wrap: wrap;
 }
 
 .content-list {
@@ -95,13 +114,14 @@
     padding: 0;
     margin: 0;
     display: flex; /* Apply a flex context to the list */
+    flex-wrap: wrap;
 }
 
 .content-item {
     background: white; /* Light grey background for the box */
     opacity: 80%;
     margin-left:10px;
-    width: 200px;
+    width: 8em;
     height: 200px;
     padding: 20px; /* Padding inside the box */
     border-radius: 5px; /* Rounded corners for the box */
@@ -109,8 +129,17 @@
     flex-direction: column; /* Stacks flex items vertically */
     align-items: center; /* Centers flex items horizontally */
     text-align: center; /* Centers text */
+    margin-bottom: 20px;
 }
 
+/* 모바일 화면 크기에서 적용할 스타일 */
+@media (max-width: 600px) {
+    .content-item {
+        /* 모바일에서 보여질 아이템의 너비를 반으로 조정 */
+        width: calc(50% - 20px); /* 아이템의 너비를 화면의 50%로 조정하고 좌우 간격을 고려 */
+        height: auto; /* 높이를 내용에 맞게 자동으로 조정 */
+    }
+}
 .content-link {
     font-size: 20px; /* Size of the link text */
     margin-bottom: 10px; /* Space between the link and the additional text */
@@ -137,16 +166,19 @@
 .footer .copyright-info p {
     margin: 0; /* Remove default margin */
     color: #333; /* Dark color for text */
-    font-size: 17px; /* Smaller font size */
+    font-size: 14px; /* Smaller font size */
 }
 
 .footer .social-links a {
     margin: 0 10px; /* Horizontal spacing */
-    color: #ffb339; /* Bootstrap primary color for links */
+    color: #da8b0d; /* Bootstrap primary color for links */
     text-decoration: none; /* No underline */
-    font-size: 16px; /* Slightly larger font size */
+    font-size: 14px; /* Slightly larger font size */
 }
 
 .footer .social-links a:hover {
     text-decoration: underline; /* Underline on hover for better UX */
 }
+
+
+
