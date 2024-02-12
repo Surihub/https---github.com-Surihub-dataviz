@@ -1,3 +1,4 @@
+/* 0C2D57, 0C2D57, FFB0B0,  EFECEC*/
 @font-face{
     font-family: abster;
     src:url(../font/abster-webfont.woff) format('woff');
@@ -10,13 +11,13 @@
 
 .main-container {
     width: 100%;
-    height: 900px; /* Keep the viewport height */
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/digitallab_re.jpeg);
+    height: 950px; /* Keep the viewport height */
+    background-color : #92C7CF ;
+    /* background: linear-gradient(#0C2D57, #3c669d), url(../images/digitallab_re.jpeg);  */
     background-position: center center; /* Centers the background image */
     background-size: cover; /* Covers the entire container, may crop the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
-
 
 .main-container .header{
     width: 80%;
@@ -28,7 +29,7 @@
 
 .main-container .title h1,p{
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
 .navbar-container{
@@ -46,8 +47,8 @@
 }
 .navbar-container .header .brand a{
     text-decoration: none;
-    color:white;
-    font-family:abster;
+    color:black;
+    /* font-family:abster; */
 }
 
 .navbar-container .header .nav ul li{
@@ -56,7 +57,7 @@
 }
 .navbar-container .header .nav ul li a{
     text-decoration: none;
-    color:white;
+    color:black;
 }
 .navbar-container .header .nav ul li a:hover{
     color:rgb(255, 194, 95);
@@ -66,7 +67,7 @@
     left:50%;
     top:45%;
     transform:translate(-50%, -50%);
-    color:white;
+    color:#FBF9F1;
     text-align: center ;
 }
 
@@ -75,7 +76,7 @@
     margin-bottom:20px;
 }
 .main-container .title p{
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 /* 기본적으로 축약 텍스트를 숨깁니다 */
@@ -94,35 +95,37 @@
         font-size: 16px; /* 원하는 폰트 크기로 조절하세요 */
         visibility: visible;
     }
+    
 }
 
 
 .content {
     position: absolute; /* Position .content absolutely */
     top: auto; /* Override any previously set top value */
-    bottom: 0; /* Stick to the bottom */
+    bottom: 30px; /* Stick to the bottom */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
+    
     display: flex; /* Aligns children inline */
     justify-content: center; /* Centers the items horizontally */
-    padding: 20px;
+    padding: 0;
     gap: 20px; /* Space between the items */
-    flex-wrap: wrap;
 }
 
 .content-list {
     list-style: none; /* Removes default list styling */
-    padding: 0;
-    margin-bottom: 40px;
+    padding: 5px;
+    margin-bottom: 0;
     display: flex; /* Apply a flex context to the list */
     flex-wrap: wrap;
 }
 
 .content-item {
-    background: white; /* Light grey background for the box */
+    background: #FBF9F1; /* Light grey background for the box */
     opacity: 80%;
-    margin-left:10px;
-    width: 8em;
+    margin-left:5px;
+    margin-right:5px;
+    width: 12em;
     height: 200px;
     padding: 20px; /* Padding inside the box */
     border-radius: 5px; /* Rounded corners for the box */
@@ -130,19 +133,19 @@
     flex-direction: column; /* Stacks flex items vertically */
     align-items: center; /* Centers flex items horizontally */
     text-align: center; /* Centers text */
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 /* 모바일 화면 크기에서 적용할 스타일 */
 @media (max-width: 600px) {
     .content-item {
         /* 모바일에서 보여질 아이템의 너비를 반으로 조정 */
-        width: calc(50% - 20px); /* 아이템의 너비를 화면의 50%로 조정하고 좌우 간격을 고려 */
+        width: calc(50% - 10px); /* 아이템의 너비를 화면의 50%로 조정하고 좌우 간격을 고려 */
         height: auto; /* 높이를 내용에 맞게 자동으로 조정 */
     }
 }
 .content-link {
-    font-size: 20px; /* Size of the link text */
+    font-size: 22px; /* Size of the link text */
     margin-bottom: 10px; /* Space between the link and the additional text */
     text-decoration: none; /* Removes underline from the link */
     color: #333; /* Color of the link text */
@@ -172,15 +175,14 @@
 
 .footer .copyright-info p {
     margin: 0; /* Remove default margin */
-    color: white; /* Dark color for text */
-    font-size: 14px; /* Smaller font size */
+    color: black; /* Dark color for text */
+    font-size: 16px; /* Smaller font size */
 }
 
 .footer .social-links a {
     margin: 0 10px; /* Horizontal spacing */
-    color: #da8b0d; /* Bootstrap primary color for links */
-    text-decoration: none; /* No underline */
-    font-size: 14px; /* Slightly larger font size */
+    color: #FC6736; /* Bootstrap primary color for links */
+    font-size: 16px; /* Slightly larger font size */
 }
 
 .footer .social-links a:hover {
